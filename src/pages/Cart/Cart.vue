@@ -1,6 +1,6 @@
 <template>
   <div class="fotile_cart page-container">
-    页面
+    完善了的购物车页面
   </div>
 </template>
 
