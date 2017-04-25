@@ -1,6 +1,6 @@
 <template>
-  <div class="fotile_nav page-container">
-    官网承诺
+  <div class="fotile_security page-container">
+    用户安全
   </div>
 </template>
 
