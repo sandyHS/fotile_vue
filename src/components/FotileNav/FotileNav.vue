@@ -6,8 +6,8 @@
     			<a href=""></a>
     		</h1>
     	</div>
-        <div class="navlist fr">
-            <ul class="fl">
+        <div class="navlist fl">
+            <ul>
                 <li>
                     <a href="">首页</a>
                 </li>
@@ -27,19 +27,13 @@
                     <a href="">方太生活家</a>
                 </li>
             </ul>
-            <div class="fr">
-                <div>
-                    <a href="">
-                        <span>sousuo</span>
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <span>0</span>
-                    </a>
-                </div>
-            </div>
         </div>	
+        <div class="search"></div>
+        <div class="shopcart">
+            <a href="">
+                <span></span>
+            </a>
+        </div>
     </div>
   </div>
 </template>
