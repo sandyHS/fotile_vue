@@ -1,0 +1,23 @@
+.fotile_breadcrumbs{
+  height: 44px;
+  line-height: 44px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 12px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: #636363;
+  .link{
+    display: inline-block;
+    &:after{
+      content:'>';
+      display: inline-block;
+      margin:0 6px;
+    }
+    &:last-of-type:after{
+      content:'';
+    }
+    &.current{
+      cursor:default;
+    }
+  }
+}
