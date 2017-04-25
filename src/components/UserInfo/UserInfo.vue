@@ -1,6 +1,6 @@
 <template>
-  <div class="fotile_nav page-container">
-    官网承诺
+  <div class="fotile_address">
+    用户信息123123
   </div>
 </template>
 
