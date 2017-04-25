@@ -5,6 +5,7 @@
     </div>
     <router-view class="main-view"></router-view>
     <div class="FotileFooter_wrapper">
+      <FotileGuarantee></FotileGuarantee>
       <FotileFooter></FotileFooter>
     </div>
   </div>
@@ -12,10 +13,11 @@
 
 <script>
 import FotileNav from './components/FotileNav/FotileNav.vue';
+import FotileGuarantee from './components/FotileGuarantee/FotileGurantee.vue';
 import FotileFooter from './components/FotileFooter/FotileFooter.vue';
 export default {
   components:{
-    FotileNav,FotileFooter
+    FotileNav,FotileFooter,FotileGuarantee
   }
 }
 </script>
