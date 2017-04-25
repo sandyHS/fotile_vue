@@ -1,0 +1,58 @@
+.fotile_collection{
+  .collectionList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    .item{
+      width: 250px;
+      border:1px solid #e5e5e5;
+      margin-right: 12px;
+      margin-bottom: 12px;
+      padding:35px 20px;
+      box-sizing: border-box;
+      position: relative;
+      transition: all 0.5s;
+      .shoucang{
+        position: absolute;
+        right: 20px;
+        top:20px;
+        cursor: pointer;
+        color:rgb(182, 15, 15);
+        font-size: 24px;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      .goodImg{
+        width: 100%;
+      }
+      .text-wrapper{
+        font-size: 15px;
+        color: ##444444;
+        .goodName,.goodDesc{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 1.4;
+        }
+        .price{
+          text-align: center;
+          margin-top: 24px;
+          font-size: 24px;
+          &:before{
+            content:"¥";
+            display: inline-block;
+            margin-right: 0.3em;
+          }
+        }
+      }
+      &:hover{
+        box-shadow: 0 0 15px #ccc;
+        .shoucang{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
