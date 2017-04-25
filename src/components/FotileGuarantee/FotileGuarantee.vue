@@ -1,6 +1,35 @@
 <template>
-  <div class="fotile_nav page-container">
-    官网保证
+  <div class="fotile_guarantee w1170">
+    <ul class="clearfix">
+    	<li>
+    		<a href="">
+    			<i></i>
+    			<h1>5年保修</h1>
+    			<p>售后服务点遍布全国31个省市</p>
+    		</a>
+    	</li>
+    	<li>
+    		<a href="">
+    			<i></i>
+    			<h1>货到付款</h1>
+    			<p>全国31个省市支持货到付款</p>a
+    		</a>
+    	</li>
+    	<li>
+    		<a href="">
+    			<i></i>
+    			<h1>10天无理由退货</h1>
+    			<p>产品售出10天内可无理由退货</p>
+    		</a>
+    	</li>
+    	<li>
+    		<a href="">
+    			<i></i>
+    			<h1>30天无理由换货</h1>
+    			<p>产品售出30天内可无理由换货</p>
+    		</a>
+    	</li>
+    </ul>
   </div>
 </template>
 
