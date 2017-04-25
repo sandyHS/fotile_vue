@@ -1,12 +1,15 @@
 <template>
-  <div class="fotile_collection page-container">
-    用户收藏
+  <div class="fotile_collection">
+    <TitleWithNTALKER title="我的收藏"></TitleWithNTALKER>
   </div>
 </template>
 
 <script>
+import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER.vue';
 export default {
-
+  components:{
+    TitleWithNTALKER
+  }
 }
 </script>
 

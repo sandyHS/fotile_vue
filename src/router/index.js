@@ -5,20 +5,18 @@ import Hello from '@/components/Hello';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/Cart',
       component: (resolve) => {
         require(['../pages/Cart/Cart.vue'], resolve);
       },
-      meta:{
-        breadcrumbs:[
-          {
-            name:"首页",
-            link:"//www.fotile.com"
+      meta: {
+        breadcrumbs: [{
+            name: "首页",
+            link: "//www.fotile.com"
           },
           {
-            name:"购物车",
+            name: "购物车",
           }
         ]
       }
@@ -28,18 +26,17 @@ export default new Router({
       component: (resolve) => {
         require(['../pages/OrderConfirm/OrderConfirm.vue'], resolve);
       },
-      meta:{
-        breadcrumbs:[
-          {
-            name:"首页",
-            link:"//www.fotile.com"
+      meta: {
+        breadcrumbs: [{
+            name: "首页",
+            link: "//www.fotile.com"
           },
           {
-            name:"购物车",
-            link:'#/Cart'
+            name: "购物车",
+            link: '#/Cart'
           },
           {
-            name:"订单确认",
+            name: "订单确认",
           }
         ]
       }
@@ -49,14 +46,13 @@ export default new Router({
       component: (resolve) => {
         require(['../pages/OrderSubmit/OrderSubmit.vue'], resolve);
       },
-      meta:{
-        breadcrumbs:[
-          {
-            name:"首页",
-            link:"//www.fotile.com"
+      meta: {
+        breadcrumbs: [{
+            name: "首页",
+            link: "//www.fotile.com"
           },
           {
-            name:"购物车",
+            name: "购物车",
           }
         ]
       }
@@ -66,14 +62,13 @@ export default new Router({
       component: (resolve) => {
         require(['../pages/PayResult/PayResult.vue'], resolve);
       },
-      meta:{
-        breadcrumbs:[
-          {
-            name:"首页",
-            link:"//www.fotile.com"
+      meta: {
+        breadcrumbs: [{
+            name: "首页",
+            link: "//www.fotile.com"
           },
           {
-            name:"购物车",
+            name: "购物车",
           }
         ]
       }
@@ -83,8 +78,7 @@ export default new Router({
       component: (resolve) => {
         require(['../pages/UserCenter/UserCenter.vue'], resolve);
       },
-      children: [
-        {
+      children: [{
           path: 'UserInfo',
           component: (resolve) => {
             require(['../pages/UserInfo/UserInfo.vue'], resolve);
@@ -140,8 +134,11 @@ export default new Router({
         }
       ]
     },
-    { path: '*', redirect: () => {
-      location.href = '//www.fotile.com';
-    } }
+    // {
+    //   path: '*',
+    //   redirect: () => {
+    //     location.href = '//www.fotile.com';
+    //   }
+    // }
   ]
 });
