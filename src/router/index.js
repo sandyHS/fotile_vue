@@ -131,6 +131,12 @@ export default new Router({
           component: (resolve) => {
             require(['../pages/OrderDetail/OrderDetail.vue'], resolve);
           }
+        },
+        {
+          path: 'MyProducts',
+          component: (resolve) => {
+            require(['../pages/MyProducts/MyProducts.vue'], resolve);
+          }
         }
       ]
     },

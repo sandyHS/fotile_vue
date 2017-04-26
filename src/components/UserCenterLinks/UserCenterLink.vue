@@ -27,6 +27,13 @@
         </router-link>
       </li>
       <li class="border-1px">
+        <router-link class="link" to="/UserCenter/MyProducts">
+          <i class="iconfont icon-youyanji"></i>
+          我的产品
+          <span style="float:right;">(7)</span>
+        </router-link>
+      </li>
+      <li class="border-1px">
         <router-link class="link" to="/UserCenter/UserIntegral">
           <i class="iconfont icon-jifen3"></i>
           我的积分
