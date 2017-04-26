@@ -6,11 +6,12 @@
       <div class="moneyOrder">
         <div class="money">
           <span class="widthFix">实际支付金额：</span>
-          <span class="currency">6888.00</span>元
+          <span class="widthFixCenter">
+            <span class="currency">6888.00</span>元</span>
         </div>
         <div class="order">
           <span class="widthFix">订单号：</span>
-          <span class="number">1049915</span>
+          <span class="widthFixCenter">1049915</span>
         </div>
       </div>
       <div class="actions">
