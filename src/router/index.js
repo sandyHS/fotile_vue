@@ -52,7 +52,7 @@ export default new Router({
             link: "//www.fotile.com"
           },
           {
-            name: "支付结果",
+            name: "订单提交",
           }
         ]
       }
@@ -68,7 +68,7 @@ export default new Router({
             link: "//www.fotile.com"
           },
           {
-            name: "购物车",
+            name: "支付结果",
           }
         ]
       }
