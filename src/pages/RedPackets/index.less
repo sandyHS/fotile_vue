@@ -1,16 +1,16 @@
 .fotile_redpackets{
 	.redpacketsList{
 		display:flex;
-		flex-direction:row;
+		flex-direction:column;
 		.item{
-			padding-left: 26px;
-			padding-top: 46px;
+			padding:46px 0 54px 26px;
 			display:flex;
 			flex-direction:row;
+			border-bottom:1px solid #ccc;
 			.redpackinfo{
 				width:168px;
 				height:188px;
-				background: #b60f0f;
+				background: url("./redpack.png") no-repeat;
 				.redpack{
 					width:168px;
 					height:188px;
@@ -26,6 +26,122 @@
 					}
 				}
 			}
+			.expdate{
+				margin-left:40px;
+				h3{
+					font-size:18px;
+					color:#000;
+					font-weight: bold;
+					margin:14px 0 26px;
+				}
+				p{
+					line-height:36px;
+					font-size:14px;
+					color:#636363;
+				}
+				.receive{
+					display:block;
+					width:120px;
+					height:30px;
+					line-height:30px;
+					border:1px solid #bbb;
+					border-radius: 5px;
+					font-size:12px;
+					color:#000;
+					text-align:center;
+					margin-top:25px;
+				}
+			}
 		}
 	}
+	.myRedpack{
+		display:flex;
+		flex-direction:column;
+		h1{
+			font-size:26px;
+			color:#4b4b4b;
+			height:58px;
+			line-height:58px;	
+			border-bottom:1px solid #ccc;
+		}
+		.info{
+			display:flex;
+			flex-wrap:wrap;
+			padding-top: 44px;
+			justify-content:space-between;
+			padding-left:26px;
+			.item{
+				width:50%;
+				display:flex;
+				flex-direction:row;
+				margin-bottom:30px;
+				.redpackinfo{
+					width:94px;
+					height:104px;
+					background: url("./redpack-s.png") no-repeat;
+					.redpack{
+						width:94px;
+						height:104px;
+						text-align: center;
+						padding:50% 0;
+						.currency{
+							font-size:12px;
+							color:#ffba01;
+						}
+						.num{
+							font-size:26px;
+							color:#ffba01;
+						}
+					}
+				}
+				.expdate{
+					margin-left:40px;
+					overflow: hidden;
+					h3{
+						font-size:16px;
+						color:#000;
+						font-weight: bold;
+					}
+					p{
+						line-height:34px;
+						font-size:12px;
+						color:#636363;
+						margin:22px 0;
+					}
+					.condition{
+						width:252px;
+						font-size:12px;
+						color:#636363;
+						h6{
+							padding:4px 0;
+							text-indent: 4.5em;
+						}
+						.limit{
+							text-indent: 4.5em;
+						}
+
+					}
+				}
+			}
+			
+		}
+		
+	}
+
+		
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
 }
