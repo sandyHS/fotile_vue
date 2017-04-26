@@ -20,6 +20,12 @@ import FotileBreadcrumbs from './components/FotileBreadcrumbs/FotileBreadcrumbs.
 import FotileFooter from './components/FotileFooter/FotileFooter.vue';
 import TempNav from './components/TempNav/TempNav.vue';
 export default {
+  watch:{
+    '$route':function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  },
   components:{
     FotileNav,FotileFooter,FotileGuarantee,FotileBreadcrumbs,TempNav
   }

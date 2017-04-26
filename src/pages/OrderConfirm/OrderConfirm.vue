@@ -1,12 +1,17 @@
 <template>
   <div class="fotile_orderconfirm page-container">
     订单确认
+    <FotileQuestions></FotileQuestions>
   </div>
 </template>
 
 <script>
-export default {
+import FotileQuestions from '../../components/FotileQuestions/FotileQuestions.vue';
 
+export default {
+  components:{
+    FotileQuestions
+  }
 }
 </script>
 
