@@ -30,7 +30,7 @@
           输入抬头：
         </div>
         <div class="right">
-          <input class="input" type="text" name="" value="">
+          <el-input style="width:200px;"></el-input>
         </div>
       </div>
       <a href="javascript:void(0)" class="save">保存发票</a>
