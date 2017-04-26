@@ -1,12 +1,15 @@
 <template>
   <div class="fotile_userintegral page-container">
-    用户积分
+    <TitleWithNTALKER title="我的积分"></TitleWithNTALKER>
   </div>
 </template>
 
 <script>
+import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER.vue';
 export default {
-
+  components:{
+    TitleWithNTALKER
+  }
 }
 </script>
 
