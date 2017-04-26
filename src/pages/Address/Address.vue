@@ -63,7 +63,7 @@ import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER
 export default {
   data() {
     return {
-      editing: true,
+      editing: false,
       fotile_area: [{
         value: 'zhinan',
         label: '指南',

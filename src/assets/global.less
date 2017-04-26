@@ -5,42 +5,54 @@ html {
   background-color: #fff;
 }
 
-#app{
+#app {
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  .main-view{
+
+  .main-view {
     flex-grow: 1;
   }
-  .FotileNav_wrapper{
-  }
+
+  .FotileNav_wrapper {}
 }
 
-.page-container{
+.page-container {
   width: 1170px;
   margin: 0 auto;
 }
 
-.ft_table{
+.ft_table {
   width: 100%;
   text-align: center;
   font-size: 14px;
-  color:#444;
+  color: #444;
   margin-top: 25px;
-  .thead{
+
+  .thead {
     background-color: #f6f6f6;
-    .tr{
+
+    .tr {
       line-height: 50px;
     }
   }
-  .tbody{
-    .tr{
+
+  .tbody {
+    .tr {
       line-height: 50px;
-      border-bottom:1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
     }
   }
 }
 
-.el-checkbox__label{
+.el-checkbox__label {
   vertical-align: middle;
+}
+
+.el-input__inner {
+  border-color: #cccccc !important;
+}
+
+.el-input__inner:focus{
+  border-color:#444 !important;
 }
