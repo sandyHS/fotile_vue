@@ -1,0 +1,62 @@
+.fotile_payresult{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  .inner{
+    text-align: center;
+    .iconfont{
+      font-size: 30px;
+      color:#fff;
+      background-color: #129b1a;
+      display: inline-block;
+      padding: 12px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+    .resultText{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .moneyOrder{
+      line-height: 1.4;
+      margin-bottom: 20px;
+      .money,.order{
+        .widthFix{
+          display: inline-block;
+          width: 120px;
+          text-align: right;
+        }
+        .widthFixCenter{
+          display: inline-block;
+          width: 120px;
+          text-align: center;
+          .currency{
+            display: inline-block;
+            color: rgb(182, 15, 15);
+            margin-right: 6px;
+            &:before{
+              display: inline-block;
+              content:'¥';
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+    .actions{
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      .btn{
+        display: inline-block;
+        width: 116px;
+        height: 34px;
+        border:1px solid #e5e5e5;
+        font-size: 14px;
+        line-height: 34px;
+        border-radius: 4px;
+        text-align: center;
+      }
+    }
+  }
+}
