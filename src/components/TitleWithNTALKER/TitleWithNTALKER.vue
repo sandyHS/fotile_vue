@@ -18,13 +18,7 @@ export default {
   },
   methods: {
     NTALKER() {
-      axios.get('http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9729')
-        .then(function(response) {
-          console.log(response);
-        })
-        .catch(function(error) {
-          console.log(error);
-        });
+      NTKF.im_openInPageChat('kf_9729_1422865742088');
     }
   }
 }

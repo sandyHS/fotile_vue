@@ -11,19 +11,22 @@
 				<li class="title">
 					<span>获取日期</span>
 					<span>来源</span>
-					<span>+4000</span>
+					<span>获取积分</span>
 				</li>
 				<li>
 					<span>2017-01-04 01:44:12</span>
 					<span>双11抽奖赠送1000积分</span>
-					<span>+4000</span>
+					<span class="red">+4000</span>
 				</li>
 				<li>
 					<span>2017-01-04 01:44:12</span>
 					<span>双11抽奖赠送1000积分</span>
-					<span>+4000</span>
+					<span class="red">+4000</span>
 				</li>
 			</ul>
+		</div>
+		<div class="page">
+			
 		</div>
     </div>
   </div>

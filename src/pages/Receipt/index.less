@@ -22,35 +22,6 @@
           box-sizing: border-box;
           padding: 0 12px;
         }
-        .ft_radio{
-          margin-right: 50px;
-          input[type="radio"]{
-            display: none;
-            &:checked+.fakeR{
-              &:after{
-                content:'';
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background-color: rgb(182, 15, 15);
-                position: absolute;
-                top:4.5px;
-                left:4.5px;
-              }
-            }
-            &+.fakeR{
-              display: inline-block;
-              width: 16px;
-              height: 16px;
-              border:1px solid #e5e5e5;
-              border-radius: 50%;
-              vertical-align: middle;
-              margin-right: 10px;
-              position: relative;
-            }
-          }
-        }
       }
     }
     .save{

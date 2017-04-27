@@ -1,0 +1,90 @@
+.fotile_orderDetail{
+	.orderDetail{
+		background-color: #fcfcfc;
+		display:flex;
+		flex-direction:column;
+		.orderDetail-top{
+			height:70px;
+			border-bottom: 1px solid #cacaca;
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			position:relative;
+			.orderLeft{
+				p{
+					display:inline-block;
+					font-size: 12px;
+					color:#000;
+					margin-right:60px;
+				}
+				.setMargin{
+					margin-left:28px;
+				}
+			}
+			.orderRight{
+				width:116px;
+				height:30px;
+				border: 1px solid #b9b8b8;
+				border-radius: 4px;
+				text-align: center;
+				line-height:30px;
+				position: absolute;
+				right:18px;
+				a{
+					color:#000;
+					font-size:12px;
+				}
+
+			}
+		}
+		.orderDetail-info{
+			display: flex;
+			flex-direction:row;
+			height:420px;
+			border-bottom: 1px solid #cacaca;
+			.item{
+				flex:1;
+				h2{
+					margin:30px 0;
+				}
+			}
+			.goodsReceipt{
+				margin-left: 28px;
+
+			}
+			.logistics{
+				border-left: 1px solid #cacaca;
+				border-right: 1px solid #cacaca;
+			}
+		}
+		.orderDetail-product{
+			display:flex;
+			flex-wrap:wrap;
+			border-bottom: 1px solid #cacaca;
+
+
+		}
+		.orderDetail-money{
+			height: 96px;
+			margin-left:28px;
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			position:relative;
+			p{
+				display:inline-block;
+				font-size: 12px;
+				color:#000;
+				margin-right:60px;
+			}
+			.totalMoney{
+				position:absolute;
+				right:22px;
+				.red{
+					color:#b60f0f;
+				}
+			}
+
+		}
+	}
+}
