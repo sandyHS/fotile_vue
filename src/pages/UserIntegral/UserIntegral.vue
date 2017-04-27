@@ -6,7 +6,7 @@
       <span>当前积分</span>
       <span class="num">3000</span>
     </div>
-    <div class="integralList">
+    <div class="integralList" v-loading="integralLoading">
       <ul>
         <li class="title">
           <span>获取日期</span>
@@ -15,7 +15,7 @@
         </li>
         <li v-for="item of integralList">
           <span>{{item.Date}}</span>
-          <span>{{item.Instruction}}</span>
+          <span style="text-align:left;line-height:1.4;">{{item.Instruction}}</span>
           <span class="red">+{{item.Integral}}</span>
         </li>
       </ul>
@@ -39,6 +39,7 @@ import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER
 export default {
   data() {
     return {
+      integralLoading:true,
       integralList:[], // 积分信息
       pageNum:parseInt(this.$route.params.page),// 当前页码
       total:null // 总页码数页
@@ -60,6 +61,7 @@ export default {
       router.push(`/UserCenter/UserIntegral/${val}`);
     },
     getIntegralListByPage() { // 根据页码加载数据
+      this.integralLoading = true;
       $.ajax({
         url:`${url}/api/user/getintegrals?token=${this.token}`,
         type:'get',
@@ -74,6 +76,9 @@ export default {
         },
         error:(error) => {
           console.log(res);
+        },
+        complete:() => {
+          this.integralLoading = false;
         }
       });
     }
