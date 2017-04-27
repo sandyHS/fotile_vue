@@ -15,7 +15,7 @@
     </li>
   </ul>
   <el-dialog title="提示" v-model="confirmShow" size="tiny">
-    <span>此操作不可逆</span>
+    <span>此操作不可逆,确定要删除吗？</span>
     <span slot="footer" class="dialog-footer">
     <el-button @click="confirmShow=false">取 消</el-button>
     <el-button type="primary" @click="realDel()">确 定</el-button>
