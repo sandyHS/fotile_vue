@@ -1,2 +1,131 @@
 .fotile_cart{
+  padding-top:60px;
+  .list-wrapper{
+    .cartList{
+      .cartItem{
+        .goodList{
+          .goodItem{
+            display: flex;
+            border-bottom: 1px solid #e5e5e5;
+            .goodImg{
+              padding: 10px 20px;
+              flex-shrink: 0;
+              align-self: flex-start;
+            }
+            .right-wrapper{
+              flex-grow: 1;
+              .top-wrapper{
+                border-bottom:1px solid #e5e5e5;
+                padding-top: 50px;
+                padding-bottom:15px;
+                display: flex;
+                align-items: center;
+                .nameAndDesc{
+                  flex-grow: 1;
+                  font-size: 14px;
+                  line-height: 1.4;
+                }
+                .unit-price{
+                  width: 125px;
+                  text-align: center;
+                  font-size: 14px;
+                  color: #adadad;
+                  &:not(:empty):before{
+                    content:"¥";
+                    display: inline-block;
+                    margin-right: 6px;
+                  }
+                }
+                .cartControl{
+
+                }
+                .totalPrice{
+                  width: 205px;
+                  text-align: right;
+                  font-size: 20px;
+                  &:before{
+                    content:"¥";
+                    display: inline-block;
+                    margin-right: 6px;
+                  }
+                }
+              }
+              .bottom-wrapper{
+                padding-top:24px;
+                padding-bottom:35px;
+                .line{
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 14px;
+                  .goodNo{
+                    color:#c3c3c3;
+                  }
+                  .del{
+                    .canDel{
+                      color:#b70f0f;
+                    }
+                    .cantDel{
+                      color:#6b6b6b;
+                    }
+                  }
+                }
+                .checkbox-wrapper{
+                  margin-top: 30px;
+                  .checkItem{
+                    display:inline-block;
+                    vertical-align:middle;
+                    margin-left: 12px;
+                    .img{
+
+                    }
+                    .text-right{
+                      line-height: 1.4;
+                      display: inline-block;
+                      vertical-align: top;
+                      font-size: 14px;
+                      .red{
+                        text-decoration: underline;
+                        color:#b70f0f;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .cart-count{
+    text-align: right;
+    margin-top:45px;
+    margin-bottom:24px;
+    line-height: 2;
+    .red{
+      color:#b70f0f;
+    }
+  }
+  .actions{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    .btn{
+      display: inline-block;
+      height: 33px;
+      line-height: 31px;
+      box-sizing: border-box;
+      font-size: 14px;
+      padding:0 24px;
+      border-radius: 4px;
+      &.default{
+        border:1px solid #e5e5e5;
+      }
+      &.red{
+        border:1px solid #e5e5e5;
+        background-color: #b70f0f;
+        color:#fff;
+      }
+    }
+  }
 }
