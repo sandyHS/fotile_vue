@@ -63,7 +63,7 @@
               </div>
               <div class="select-wrapper" v-if="addressType==='1'">
                 <el-select v-model="value" placeholder="请选择">
-                  <el-option v-for="item in options" :label="item.label" :value="item.value"></el-option>
+                  <el-option v-for="(item,index) in options" :label="item.label" :value="item.value" :key="index"></el-option>
                 </el-select>
               </div>
               <div class="addInput-wrapper" v-if="addressType==='2'">
@@ -230,7 +230,7 @@
               <div class="input-label">优惠选择</div>
               <div class="right">
                 <el-select v-model="value" clearable placeholder="选择红包">
-                  <el-option v-for="item in options" :label="item.label" :value="item.value">
+                  <el-option v-for="(item,index) in options" :label="item.label" :value="item.value" :key="index">
                   </el-option>
                 </el-select>
                 <p>每笔订单仅限使用一个红包</p>
