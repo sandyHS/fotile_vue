@@ -129,7 +129,7 @@
       <p>总计<span class="red">2</span>件商品</p>
       <p>您可以获得以下赠品</p>
       <p>积分：<span class="red">+13380分</span></p>
-      <p>总计&nbsp;&nbsp;¥&nbsp;&nbsp;6888.00&nbsp;&nbsp;元</p>
+      <p style="font-size:24px;">总计&nbsp;&nbsp;¥&nbsp;&nbsp;6888.00&nbsp;&nbsp;元</p>
     </div>
     <div class="actions">
       <a href="javascript:void(0)" class="btn default">返回继续购物</a>

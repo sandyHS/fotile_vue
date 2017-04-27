@@ -7,12 +7,8 @@
           选择发票抬头：
         </div>
         <div class="right">
-          <label class="ft_radio">
-            <input type="radio" name="radio1" checked><span class="fakeR"></span>个人
-          </label>
-          <label class="ft_radio">
-            <input type="radio" name="radio1"><span class="fakeR"></span>单位
-          </label>
+          <el-radio class="radio" v-model="Rtitle" label="1">个人</el-radio>
+          <el-radio class="radio" v-model="Rtitle" label="2">单位</el-radio>
         </div>
       </div>
       <div class="line">
@@ -20,9 +16,8 @@
           选择发票类型：
         </div>
         <div class="right">
-          <label class="ft_radio">
-            <input type="radio" name="radio2" checked><span class="fakeR"></span>普通发票
-          </label>
+          <el-radio class="radio" v-model="Rtype" label="1">普通发票</el-radio>
+
         </div>
       </div>
       <div class="line">
@@ -55,6 +50,12 @@
 <script>
 import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER.vue';
 export default {
+  data() {
+    return {
+      Rtitle:"1",
+      Rtype:"1"
+    }
+  },
   components:{
     TitleWithNTALKER
   }

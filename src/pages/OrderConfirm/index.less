@@ -1,0 +1,131 @@
+.confirm_wrapper{
+  padding-top:60px;
+  .list{
+    .item{
+      .title{
+        font-size: 24px;
+        color: #b2b2b2;
+        line-height: 50px;
+        margin-bottom: 10px;
+        border-bottom:1px solid #e5e5e5;
+      }
+      .content{
+        display: none;
+        .content-bottom{
+          height: 60px;
+          background-color: #fafafa;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+          align-items: center;
+        }
+      }
+      &.editing{
+        .title{
+          color: #000000;
+        }
+        .content{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.cart-count{
+  text-align: right;
+  margin-top:45px;
+  margin-bottom:24px;
+  line-height: 2;
+  .fixWidth{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+  }
+  .red{
+    color:#b70f0f;
+  }
+}
+
+.goodList{
+  .goodItem{
+    display: flex;
+    align-items: center;
+    .img{
+      align-self: flex-start;
+      margin-right: 20px;
+    }
+    .text{
+      flex-grow: 1;
+      .nameDesc{
+        margin-bottom:40px;
+      }
+      .goodLink{
+        text-decoration: underline;
+        color:#b70f0f;
+      }
+    }
+    &:not(:last-of-type){
+      border-bottom:1px solid #e5e5e5;
+    }
+  }
+}
+
+.btn{
+  display: inline-block;
+  height: 33px;
+  line-height: 31px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding:0 24px;
+  border-radius: 4px;
+  &.default{
+    border:1px solid #e5e5e5;
+  }
+  &.red{
+    border:1px solid #e5e5e5;
+    background-color: #b70f0f;
+    color:#fff;
+  }
+}
+
+.addressAndRules{
+  padding-top:36px;
+  padding-bottom:60px;
+  display: flex;
+  .address{
+    flex-shrink: 0;
+    flex-grow: 1;
+    h6{
+      margin-bottom:16px;
+    }
+    .topInput-wrapper{
+      .input-wrapper{
+        margin-bottom: 10px;
+      }
+    }
+    .radio-wrapper{
+      margin-bottom: 16px;
+    }
+  }
+  .rules{
+    width: 620px;
+    flex-shrink: 0;
+    font-size: 14px;
+    h6{
+      margin-bottom:16px;
+      a{
+        text-decoration: underline;
+        color:#b70f0f;
+      }
+    }
+    ul{
+      padding-left:20px;
+      li{
+        list-style:initial;
+        margin-bottom: 16px;
+        line-height: 1.1;
+      }
+    }
+  }
+}
