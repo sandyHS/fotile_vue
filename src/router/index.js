@@ -95,7 +95,7 @@ export default new Router({
           }
         },
         {
-          path: 'UserIntegral',
+          path: 'UserIntegral/:page',
           component: (resolve) => {
             require(['../pages/UserIntegral/UserIntegral.vue'], resolve);
           },
