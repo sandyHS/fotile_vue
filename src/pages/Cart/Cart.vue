@@ -145,7 +145,8 @@ import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER
 export default {
   data() {
     return {
-      tempVal:1
+      tempVal:1,
+      checked:false
     }
   },
   components:{
