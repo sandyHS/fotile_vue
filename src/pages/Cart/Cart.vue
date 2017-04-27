@@ -66,7 +66,7 @@ import {
 } from '../../assets/config.js';
 import FotileQuestions from '../../components/FotileQuestions/FotileQuestions.vue';
 import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER.vue';
-import axios from 'axios';
+import $ from 'jquery';
 export default {
   data() {
     return {
@@ -97,22 +97,24 @@ export default {
   },
   methods: {
     getCartList() {
-      axios.get(`${url}/api/cart/getcarts?token=${this.token}`, {
-          params: {
-            appid: appid,
-            appsecret:appsecret,
-            provinceid:0,
-            cityid:0,
-            regionid:0
-          }
-        })
-        .then((response) => {
+      $.ajax({
+        url:`${url}/api/cart/getcarts?token=${this.token}`,
+        type:'get',
+        data:{
+          appid: appid,
+          appsecret:appsecret,
+          provinceid:0,
+          cityid:0,
+          regionid:0
+        },
+        success:(res) => {
           this.cartListLoading = false;
-          this.cartList = response.data.Data.CartProduct;
-        })
-        .catch(function(response) {
-          console.log(response);
-        });
+          this.cartList = res.Data.CartProduct;
+        },
+        error:(error) => {
+          console.log(error);
+        }
+      });
     },
   },
   components: {

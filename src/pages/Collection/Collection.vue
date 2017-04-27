@@ -30,8 +30,8 @@ import {
   appid,
   appsecret
 } from '../../assets/config.js';
-import axios from 'axios';
 import TitleWithNTALKER from '../../components/TitleWithNTALKER/TitleWithNTALKER.vue';
+import $ from 'jquery';
 export default {
   data() {
     return {
@@ -52,33 +52,38 @@ export default {
       this.currentID = ID;
     },
     realDel() { // 实际删除
-      console.log(this.currentID);
       this.confirmShow = false;
-      axios.post(`${url}/api/user/RemoveFavorite`, {
+      $.ajax({
+        url:`${url}/api/user/RemoveFavorite?appid=${appid}&appsecret=${appsecret}`,
+        type:"post",
+        data:{
           id: this.currentID,
-          token:this.token
-        })
-        .then(function(response) {
+          token:decodeURIComponent(this.token)
+        },
+        success:(response) => {
           console.log(response);
-        })
-        .catch(function(response) {
-          console.log(response);
-        });
+        },
+        error:(error) => {
+          console.log(error);
+        }
+      });
     },
     getMyCollection() { // 获取收藏列表
-      axios.get(`${url}/api/user/getfavorites?token=${this.token}`, {
-          params: {
-            appid: appid,
-            appsecret: appsecret,
-          }
-        })
-        .then((response) => {
+      $.ajax({
+        url:`${url}/api/user/getfavorites?token=${this.token}`,
+        type:'get',
+        data:{
+          appid: appid,
+          appsecret: appsecret,
+        },
+        success:(res) => {
           this.loadingCollection = false;
-          this.collectionList = response.data.Data;
-        })
-        .catch(function(response) {
-          console.log(response);
-        });
+          this.collectionList = res.Data;
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      });
     }
   },
   mounted() {
