@@ -109,7 +109,6 @@ export default {
         .then((response) => {
           this.cartListLoading = false;
           this.cartList = response.data.Data.CartProduct;
-          console.log(response.data.Data);
         })
         .catch(function(response) {
           console.log(response);

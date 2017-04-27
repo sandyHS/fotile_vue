@@ -3,10 +3,12 @@ import App from './App';
 import router from './router';
 import store from './store/index.js';
 
-import {Loading,Input,Cascader,Checkbox,DatePicker,Pagination,InputNumber,Radio,Select,Option,Autocomplete } from 'element-ui';
+import {Loading,Button,Dialog,Input,Cascader,Checkbox,DatePicker,Pagination,InputNumber,Radio,Select,Option,Autocomplete } from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 
 Vue.use(Loading);
+Vue.use(Button);
+Vue.use(Dialog);
 Vue.use(Input);
 Vue.use(Cascader);
 Vue.use(Checkbox);
