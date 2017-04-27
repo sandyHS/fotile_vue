@@ -48,7 +48,7 @@
     			</p>
     			<div class="text-area-input">
     				<p>备注:</p>
-    				<textarea></textarea>
+    				<p></p>
     			</div>
     		</div>
     		<div class="logistics item">
@@ -71,17 +71,19 @@
     		</div>    		
     	</div>
     	<div class="orderDetail-product">
-    		<div class="productShow">
-  				<div class="productImg">
-                	<a href="javascript:;">
-                  		<img src="">
-                	</a>  
-              	</div>
-            </div>
-            <div class="productName">
-                <a href="javascript:;">
-                  方太水槽洗碗机  JBSD3T-Q6  （不带超声波） 水槽＋洗碗机＋果蔬净化机跨界三合一神器
-                </a>
+    		<div class="productList">
+                <div class="productShow">
+                    <div class="productImg">
+                        <a href="javascript:;">
+                            <img src="./product1.png">
+                        </a>  
+                    </div>
+                </div>
+                <div class="productName">
+                    <a href="javascript:;">
+                      方太水槽洗碗机  JBSD3T-Q6  （不带超声波） 水槽＋洗碗机＋果蔬净化机跨界三合一神器
+                    </a>
+                </div>    
             </div>	
     	</div>
     	<div class="orderDetail-money">
