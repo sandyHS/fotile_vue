@@ -1,0 +1,140 @@
+.fotile_OrderList{
+	.orderWrap{
+		display:flex;
+		flex-direction:column;
+		.orderTop{
+			height:68px;
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			border-bottom:1px solid #ccc;
+			.num{
+				font-size: 42px;
+				color:#4a4a4a;
+				margin-right: 16px;
+				margin-left:28px;	
+			}
+			.orderTime{
+				font-size: 12px;
+				color:#000;
+				font-weight: bold;
+			}
+			.orderNum{
+				font-size: 12px;
+				color:#4a4a4a;
+				margin-top: 12px;
+			}
+		}
+		.orderContainer{
+			display:flex;
+			flex-direction:column;
+			background-color: #fcfcfc;
+			.orderInfo{
+				display:flex;
+				flex-direction:row;
+				border-bottom:1px solid #cacaca;
+				.orderInfo-left{
+					flex:3;
+					.productShow{
+						display:flex;
+						flex-direction:row;
+						height:144px;						
+						align-items:center;
+						border-bottom:1px solid #efefef;
+						.productImg{
+							flex:1;
+							max-width: 150px;
+							max-height: 140px;
+							text-align:center;
+							vertical-align: middle;
+							margin-left:28px;
+						}
+						.productName{
+							flex:2;
+							margin-left:40px;
+							font-size:14px;
+						}
+					}
+				}
+				.orderInfo-right{
+					flex:1;
+					align-self:center;
+					text-align: right;
+					font-size:24px;
+					margin-right:16px;
+				}
+			}
+			.userInfo{
+				height:68px;
+				font-size:12px;
+				color:#474747;
+				border-bottom:1px solid #cacaca;
+				padding-top: 24px;
+				p{
+					line-height: 32px;
+					margin-left:28px;
+					span{
+						margin-right:50px;
+					}
+				}
+			}
+			.btn-service{
+				height:98px;
+				display:flex;
+				align-items:center;
+				a{
+					display:inline-block;
+					width:116px;
+					height:30px;
+					border:1px solid #b8b8b8;
+					border-radius: 4px;
+					text-align:center;
+					line-height:30px;
+					font-size:12px;
+					color:#000;
+				}
+				.btn-left{
+					margin-left:28px;
+				}
+				.btn-right{
+					margin-left:220px;
+					.pay{
+						&:hover{
+							background-color:#b70f0f;
+							color:#fff9ff;
+						}
+						
+					}
+				}
+			}
+		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
